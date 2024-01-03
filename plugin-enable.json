@@ -1,0 +1,162 @@
+{
+  "children": [
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.lang.String)",
+        "parameters": [
+          {"=": "org.bukkit.Bukkit#getConsoleSender()"},
+          {
+            "=": "expr-hex-colored-string",
+            "parameters": [{
+              "size": 24,
+              "=": "expr-combine-strings",
+              "parameters": [
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b  ______   ______   ______   ______   ______   ______   ______   ______   ______   ______     "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/     "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b____   _____________________________ ______________________ __________.___   _____  .____     "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b\\   \\ /   /\\______   \\__    ___/    |   \\__    ___/\\_____  \\\\______   \\   | /  _  \\ |    |    "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b \\   Y   /  |    |  _/ |    |  |    |   / |    |    /   |   \\|       _/   |/  /_\\  \\|    |    "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b  \\     /   |    |   \\ |    |  |    |  /  |    |   /    |    \\    |   \\   /    |    \\    |___ "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b   \\___/    |______  / |____|  |______/   |____|   \\_______  /____|_  /___\\____|__  /_______ \\"]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b                   \\/                                      \\/       \\/            \\/        \\/"]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b  ______   ______   ______   ______   ______   ______   ______   ______   ______   ______     "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&b /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/  /_____/     "]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-combine-strings",
+                  "parameters": [
+                    {
+                      "=": "expr-string",
+                      "parameters": ["&aVersion:"]
+                    },
+                    {"=": "expr-plugin-version"}
+                  ]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-combine-strings",
+                  "parameters": [
+                    {
+                      "=": "expr-string",
+                      "parameters": ["&aAuthor:"]
+                    },
+                    {"=": "expr-plugin-authors"}
+                  ]
+                },
+                {"=": "expr-newline-character"},
+                {
+                  "=": "expr-string",
+                  "parameters": ["&bPlugin Enabled"]
+                },
+                {"=": "expr-newline-character"}
+              ]
+            }]
+          }
+        ]
+      }],
+      "=": "stat-if-statement",
+      "parameters": [
+        {
+          "=": "expr-is-equal",
+          "parameters": [
+            {
+              "=": "expr-github-version",
+              "parameters": [
+                {
+                  "=": "expr-string",
+                  "parameters": ["AlphaNodesDev"]
+                },
+                {
+                  "=": "expr-string",
+                  "parameters": ["vb-components"]
+                }
+              ]
+            },
+            {"=": "expr-plugin-version"}
+          ]
+        },
+        "normal"
+      ]
+    },
+    {
+      "children": [{
+        "=": "org.bukkit.command.CommandSender#sendMessage(java.lang.String)",
+        "parameters": [
+          {"=": "org.bukkit.Bukkit#getConsoleSender()"},
+          {
+            "size": 2,
+            "=": "expr-combine-strings",
+            "parameters": [
+              {
+                "=": "expr-hex-colored-string",
+                "parameters": [{
+                  "=": "expr-string",
+                  "parameters": ["&4&lOutDated Version Please Update The Plugin"]
+                }]
+              },
+              {"=": "expr-newline-character"},
+              {
+                "=": "expr-string",
+                "parameters": ["New Version:"]
+              },
+              {
+                "=": "expr-github-version",
+                "parameters": [
+                  {
+                    "=": "expr-string",
+                    "parameters": ["AlphaNodesDev"]
+                  },
+                  {
+                    "=": "expr-string",
+                    "parameters": ["vb-components"]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }],
+      "=": "stat-else-statement"
+    }
+  ],
+  "=": "comp-plugin-enable"
+}
